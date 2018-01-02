@@ -1,0 +1,16 @@
+body{
+  background-color: #000000;
+  margin: 0px;
+  padding: 0px;
+}
+canvas {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h1 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 3vw;
+}
