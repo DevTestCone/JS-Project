@@ -1,3 +1,5 @@
+// USE AddOn.js look in StarterPack
+//
 window.onload = function() {
   "use strict"
 
