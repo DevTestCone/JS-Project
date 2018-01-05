@@ -9,4 +9,4 @@ Project url CodePen:
 3. CLOCK - https://codepen.io/DevTestCone/full/ypyGjZ/ ;
 4. SNAKE GAME - https://codepen.io/DevTestCone/full/opjKEr/ ;
 5. FRACTAL TREE - https://codepen.io/DevTestCone/full/dJRRxr/ ;
-6. FRACTAL TRIANGLE - https://codepen.io/DevTestCone/full/xpXJQr/
+6. FRACTAL TRIANGLE - https://codepen.io/DevTestCone/full/xpXJQr/ ;
