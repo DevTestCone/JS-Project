@@ -11,3 +11,5 @@ Project url CodePen:
 5. MATRIX - https://codepen.io/DevTestCone/full/YYVveY/ ;
 6. FRACTAL TREE - https://codepen.io/DevTestCone/full/dJRRxr/ ;
 7. FRACTAL TRIANGLE - https://codepen.io/DevTestCone/full/xpXJQr/ ;
+8. CIRCLE - https://codepen.io/DevTestCone/full/NXBvbj/;
+9. LORENZ SYSTEM - https://codepen.io/DevTestCone/full/WdKZXL/ ;
