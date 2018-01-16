@@ -13,3 +13,4 @@ Project url CodePen:
 7. FRACTAL TRIANGLE - https://codepen.io/DevTestCone/full/xpXJQr/ ;
 8. CIRCLE - https://codepen.io/DevTestCone/full/NXBvbj/;
 9. LORENZ SYSTEM - https://codepen.io/DevTestCone/full/WdKZXL/ ;
+10. WEBCAM - https://codepen.io/DevTestCone/full/ppOqEe/ ;
