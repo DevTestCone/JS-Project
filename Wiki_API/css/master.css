@@ -1,0 +1,170 @@
+:root {
+  --bg-color: #110011;
+  --text-color: #20CE00;
+  --glowing-color: #70FF0F;
+  --h1-font-size: 7vw;
+  --text-font-size:1.1vw;
+  --input-font-size:1.5vw;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: var(--text-font-size);
+  font: italic small-caps bold cursive;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  text-shadow: 1px 0px 5px var(--glowing-color);
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+
+}
+
+a {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+p {
+  padding: 5px;
+}
+
+h1{
+margin: 0;
+}
+
+.heading{
+  font-size: var(--h1-font-size );
+  text-align: center;
+  width: 50vh;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  display: -webkit-grid;
+  -webkit-grid-columns: auto;
+  -webkit-grid-rows: auto;
+  grid-gap: 0.1vw;
+  padding: 0.1vw;
+  perspective: auto;
+}
+
+.grid div {
+  text-align: center;
+  padding: 0;
+}
+
+.square {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+input{
+  width: 50vh;
+  height: 4vh;
+  background-color: var(--bg-color);
+  border:solid 1px var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  font-size: var(--input-font-size);
+}
+
+#one {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#two {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#three {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+#four {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+#five {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+#six {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#seven {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+#eight {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.square#one:hover, .square#one.hover {
+  transform: rotateY(180deg);
+}
+
+#two:hover, #two.hover {
+  transform: rotateY(180deg);
+}
+
+#three:hover, #three.hover {
+  transform: rotateY(180deg);
+}
+
+#four:hover, #four.hover {
+  transform: rotateY(180deg);
+}
+
+#five:hover, #five.hover {
+  transform: rotateY(180deg);
+}
+
+#six:hover, #six.hover {
+  transform: rotateY(180deg);
+}
+
+#seven:hover, #seven.hover {
+  transform: rotateY(180deg);
+}
+
+#eight:hover, #eight.hover {
+  transform: rotateY(180deg);
+}
