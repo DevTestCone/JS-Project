@@ -4,6 +4,9 @@
 Small projects made in pure javascript;
 
 Project url CodePen:
+
+***CANVAS***
+
 1. CLOCK - https://codepen.io/DevTestCone/full/ypyGjZ/ ;
 2. GRANDFATHER CLOCK - https://codepen.io/DevTestCone/full/ZvBeJG/ ;
 3. GAME OF LIFE - https://codepen.io/DevTestCone/full/xpbdqd/ ;
@@ -14,3 +17,7 @@ Project url CodePen:
 8. CIRCLE - https://codepen.io/DevTestCone/full/NXBvbj/;
 9. LORENZ SYSTEM - https://codepen.io/DevTestCone/full/WdKZXL/ ;
 10. WEBCAM - https://codepen.io/DevTestCone/full/ppOqEe/ ;
+
+***SITE***
+
+1. Wiki Page API - css variables, jquery - ajax, animation, glowing...
