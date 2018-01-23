@@ -1,35 +1,24 @@
 :root {
-  --bg-color: #110011;
-  --text-color: #20CE00;
+  --bg-color: #FFFFFF;
+  --bg-square-color: #EEEEEE;
+  --text-color: #131313;
   --glowing-color: #70FF0F;
   --h1-font-size: 7vw;
-  --text-font-size:1.1vw;
+  --text-font-size:1vw;
   --input-font-size:1.5vw;
+  --text-input-size:1.8vw;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   font-size: var(--text-font-size);
-  font: italic small-caps bold cursive;
+  font: "Courier New", Courier, monospace;
   color: var(--text-color);
   background-color: var(--bg-color);
-  -webkit-stroke-width: 5.3px;
-  -webkit-stroke-color: #FFFFFF;
-  -webkit-fill-color: #FFFFFF;
-  text-shadow: 1px 0px 5px var(--glowing-color);
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
-  -moz-transition: width 0.3s;
-  -o-transition: width 0.3s;
-
 }
 
 a {
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
   text-decoration: none;
   color: var(--text-color);
 }
@@ -50,36 +39,46 @@ margin: 0;
 }
 
 .grid {
+  max-width: 1200px;
+  margin:auto;
+  margin-bottom: 15px;
   display: grid;
   grid-template-columns: auto;
   display: -webkit-grid;
   -webkit-grid-columns: auto;
   -webkit-grid-rows: auto;
-  grid-gap: 0.1vw;
-  padding: 0.1vw;
+  grid-gap: 0.2vw;
   perspective: auto;
 }
 
 .grid div {
   text-align: center;
-  padding: 0;
+  padding: 5px;
+
 }
 
 .square {
+  background-color: var(--bg-square-color);
+  border: 2px solid var(--bg-color);
   -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease-in;
   -moz-transform-style: preserve-3d;
+  -moz-transition: all 0.5s ease-in;
   -o-transform-style: preserve-3d;
+  -o-transition: all 0.5s ease-in;
   transform-style: preserve-3d;
+  transition: all 0.5s ease-in;
+
 }
 
 input{
   width: 50vh;
   height: 4vh;
-  background-color: var(--bg-color);
-  border:solid 1px var(--bg-color);
+  font-size:  var(--text-input-size);
+  background-color: var(--bg-square-color);
+  border:solid 2px var(--bg-square-color);
   color: var(--text-color);
   text-align: center;
-  font-size: var(--input-font-size);
 }
 
 #one {
