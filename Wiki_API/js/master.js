@@ -6,6 +6,7 @@ window.onload = function() {
   let searchInput = document.getElementById('searchInput');
   let valueInput;
   let storeInput;
+  let trimmedString;
   let nodeHeading = [
     document.getElementById('one_h1'),
     document.getElementById('two_h1'),
@@ -53,7 +54,15 @@ window.onload = function() {
           success: function(data) {
             for (var i = 0; i < nodeHeading.length; i++) {
               dataNodeHeading = document.createTextNode(data[1][i]);
-              nodeHeading[i].innerHTML = dataNodeHeading.textContent;
+                trimmedString = dataNodeHeading.textContent;
+                  trimmedString = trimmedString.split(" ");
+                  if (trimmedString.length >= 2) {
+                    nodeHeading[i].innerHTML = trimmedString[0]+ " " + trimmedString[1];
+                  }else{
+                    nodeHeading[i].innerHTML = trimmedString[0];
+                  }
+
+
               dataNodeParagraph = document.createTextNode(data[2][i]);
               nodeParagraph[i].innerHTML = dataNodeParagraph.textContent.substring(0,200) + "...";
               dataNodeLink = document.createTextNode(data[3][i]);
