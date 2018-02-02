@@ -1,7 +1,8 @@
 // Search Query: https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=
 "use strict"
 window.onload = function() {
-
+  
+  document.querySelector('.grid').style.visibility = "hidden";
   let url = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=";
   let searchInput = document.getElementById('searchInput');
   let valueInput;
@@ -43,6 +44,7 @@ window.onload = function() {
   searchInput.onkeydown = function(e) {
     switch (e.keyCode || event.which) {
       case 13:
+        document.querySelector('.grid').style.visibility = "visible";
         valueInput = searchInput.value;
         storeInput = url + valueInput;
         valueInput = '';
