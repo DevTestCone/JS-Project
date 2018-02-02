@@ -55,14 +55,14 @@ window.onload = function() {
             for (var i = 0; i < nodeHeading.length; i++) {
               dataNodeHeading = document.createTextNode(data[1][i]);
                 trimmedString = dataNodeHeading.textContent;
-                  trimmedString = trimmedString.split(" ");
-                  if (trimmedString.length >= 2) {
-                    nodeHeading[i].innerHTML = trimmedString[0]+ " " + trimmedString[1];
-                  }else{
-                    nodeHeading[i].innerHTML = trimmedString[0];
-                  }
-
-
+                let x = trimmedString.indexOf("(");
+                if (x >= 0) {
+                  nodeHeading[i].innerHTML = trimmedString.substring(0,x);
+                  //console.log(true);
+                }else{
+                  nodeHeading[i].innerHTML = trimmedString;
+                  //console.log(false);
+                }
               dataNodeParagraph = document.createTextNode(data[2][i]);
               nodeParagraph[i].innerHTML = dataNodeParagraph.textContent.substring(0,200) + "...";
               dataNodeLink = document.createTextNode(data[3][i]);
@@ -99,3 +99,8 @@ window.onload = function() {
 // nodeLink.href = dataNodeLink.textContent;
 // console.log(dataNodeLink.textContent);
 // document.body.appendChild(nodeLink)
+// function escapeRegExp(trimmed) {
+//   return trimmed.replace(/[.*+?^${}()|[]\\]/g, '\\$&'); // $& means the whole matched string
+// }
+//
+// nodeHeading[i].innerHTML = escapeRegExp(trimmedString);
