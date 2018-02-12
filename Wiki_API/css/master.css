@@ -22,11 +22,8 @@ body {
   background-color: var(--bg-color);
   background:linear-gradient(to right, var(--bg-square-color) , var(--bg-color));
 }
-li {
-    float: center;
-}
 
-li a {
+.div a {
     display: block;
     color: var(--p-text-color);
     text-align: center;
