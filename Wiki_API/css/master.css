@@ -23,7 +23,7 @@ body {
   background:linear-gradient(to right, var(--bg-square-color) , var(--bg-color));
 }
 
-.div a {
+.nav a {
     display: block;
     color: var(--p-text-color);
     text-align: center;
