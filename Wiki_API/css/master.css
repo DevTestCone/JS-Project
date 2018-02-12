@@ -1,8 +1,9 @@
-
 :root {
   --bg-color: #FFFFFF;
   --bg-square-color: #EEEEEE;
   --text-color: #131313;
+  --p-text-color: #FFFFFF;
+  --bc-color: #131313;
   --glowing-color: #70FF0F;
   --h1-font-size: 7vw;
   --text-font-size:1vw;
@@ -19,6 +20,21 @@ body {
   background-color: var(--bg-color);
   background:linear-gradient(to right, var(--bg-square-color) , var(--bg-color));
 }
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: var(--bc-color);
+}
 
 a {
   text-decoration: none;
@@ -27,6 +43,7 @@ a {
 
 p {
   padding: 5px;
+  margine:0;
 }
 
 h1{
@@ -168,4 +185,14 @@ input{
 
 #eight:hover, #eight.hover {
   transform: rotateY(180deg);
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  color: var(--p-text-color);
+  background-color:var(--bc-color);
+  width:100%;
+  padding: 0;
+  margin:0;
+  text-align: center;
 }
