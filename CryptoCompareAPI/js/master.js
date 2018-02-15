@@ -5,6 +5,7 @@ let ethChangeBTC, ethChangeUSD, ethChangeEUR, ethBTC, ethUSD, ethEUR;
 let ltcChangeBTC, ltcChangeUSD, ltcChangeEUR, ltcBTC, ltcUSD, ltcEUR;
 let xrpChangeBTC, xrpChangeUSD, xrpChangeEUR, xrpBTC, xrpUSD, xrpEUR;
 
+function Update(){
 fetch("https://min-api.cryptocompare.com/")
   .then(function(response) {
     return response.json()
@@ -102,3 +103,6 @@ fetch("https://min-api.cryptocompare.com/")
   .catch(function(error) {
     console.log('Requestfailed', error)
   });
+}
+Update();
+setInterval ( "Update()", 5000 );
