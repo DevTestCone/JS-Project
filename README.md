@@ -20,5 +20,4 @@ Project url CodePen:
 
 ***SITE***
 
-1. WIKI PAGE API - css variables, jquery - ajax, animation, glowing... in progress...
-  CODEPEN - https://codepen.io/DevTestCone/full/baJZWe/ ;
+1. WIKI PAGE API - https://codepen.io/DevTestCone/full/baJZWe/ ;
