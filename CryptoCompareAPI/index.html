@@ -9,22 +9,26 @@
 </head>
 
 <body>
-
-  <body>
-    <h2>Section title</h2>
-    <div class="table-responsive">
-      <table class="table table-striped table-sm">
-        <thead>
-          <tr>
-            <th>Coin</th>
-            <th>BTC</th>
-            <th>USD</th>
-            <th>EUR</th>
-            <th>24H CHANGE</th>
-          </tr>
-        </thead>
-        <tbody>
-            <td>DASH</td>
+  <div class="table-responsive container">
+    <h2>CryptoCompareAPI</h2>
+    <table class="table table-striped table-sm ">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Coin</th>
+          <th>BTC</th>
+          <th>DAY CHANGE BTC</th>
+          <th>USD</th>
+          <th>DAY CHANGE USD</th>
+          <th>EUR</th>
+          <th>DAY CHANGE EUR</th>
+        </tr>
+      </thead>
+      <!-- MASTER.JS -->
+      <tbody>
+        <tr>
+          <td>-1-</td>
+          <td>DASH</td>
           <td id="dashBTC">calculating</td>
           <td id="dashChangeBTC">calculating</td>
           <td id="dashUSD">calculating</td>
@@ -33,6 +37,7 @@
           <td id="dashChangeEUR">calculating</td>
         </tr>
         <tr>
+          <td>-2-</td>
           <td>ETC</td>
           <td id="etcBTC">calculating</td>
           <td id="etcChangeBTC">calculating</td>
@@ -42,6 +47,7 @@
           <td id="etcChangeEUR">calculating</td>
         </tr>
         <tr>
+          <td>-3-</td>
           <td>ETH</td>
           <td id="ethBTC">calculating</td>
           <td id="ethChangeBTC">calculating</td>
@@ -51,6 +57,7 @@
           <td id="ethChangeEUR">calculating</td>
         </tr>
         <tr>
+          <td>-4-</td>
           <td>LTC</td>
           <td id="ltcBTC">calculating</td>
           <td id="ltcChangeBTC">calculating</td>
@@ -60,6 +67,7 @@
           <td id="ltcChangeEUR">calculating</td>
         </tr>
         <tr>
+          <td>-5-</td>
           <td>XRP</td>
           <td id="xrpBTC">calculating</td>
           <td id="xrpChangeBTC">calculating</td>
@@ -68,13 +76,13 @@
           <td id="xrpEUR">calculating</td>
           <td id="xrpChangeEUR">calculating</td>
         </tr>
-        </tbody>
-      </table>
-    </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="/js/master.js" charset="utf-8"></script>
+      </tbody>
+    </table>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="/js/master.js" charset="utf-8"></script>
 
 </html>
